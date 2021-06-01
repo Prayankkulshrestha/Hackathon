@@ -3,15 +3,17 @@
 Problem Statement:
 Happy Customer Bank is a mid-sized private bank that deals in all kinds of banking products, like Savings accounts, Current accounts, investment products, credit products, among other offerings.The bank also cross-sells products to its existing customers and to do so they use different kinds of communication like tele-calling, e-mails, recommendations on net banking, mobile banking, etc. In this case, the Happy Customer Bank wants to cross sell its credit cards to its existing customers. The bank has identified a set of customers that are eligible for taking these credit cards.
 
-# intial Data Observations
+# Intial Observations from data
 
-1. Data has only Continous variable
+1. Data has only two Continous variable
 2. Credit variable has Null value
-3. Data has both Demographics as well sale variables
+3. Data has both Demographics as well sales level features
+4. Average account balance has outlier and low corr
 
 
 # Data Cleaning
-1. Consider null values as other class
+1. Consider null values as unknown class 
+2. Remove the duplicate if any
 
 
 # Feature Engineering
@@ -29,5 +31,9 @@ Happy Customer Bank is a mid-sized private bank that deals in all kinds of banki
 2. Use Light grident boosting with score 0.78 (with label encoding & standardscaling)
 3. Read the previous work & optimize the LGBM & XGboost & Catboost
 4. use above model & use weighted voting classification as final solution
+
+## Files
+1. Basic EDA : Basic Data analysis and EDA
+2. Train : Feature engineering and modelling
 
 Close the Hackathon as 266 Public Leaderboard & 41 rank on private Leaderboard out of 8300 candidate
